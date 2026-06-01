@@ -1,5 +1,8 @@
 # Proxmox Template Creator
 
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
+
 Bash script to automate Proxmox VE template creation from cloud-init images.
 This is what I use to spin up VMs in my homelab, standardizing the process
 and avoiding repetitive manual `qm` commands.
