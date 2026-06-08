@@ -4,7 +4,7 @@
 [![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)](https://www.proxmox.com)
 [![Shell Script](https://img.shields.io/badge/bash-5.0+-4EAA25?logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 
-Automated Proxmox VE template creator with cloud-init support. Simplify VM deployment by creating standardized, reusable templates with customizable configurations—no manual `qm` commands needed.
+Automated Proxmox VE template creator with cloud-init support. Simplify VM deployment by creating standardized, reusable templates with customizable configurations.No manual `qm` commands needed.
 
 ## Quick Overview
 - ✅ Interactive multi-distribution support (Debian, Ubuntu, Rocky, AlmaLinux, Fedora)
