@@ -7,7 +7,7 @@
 **Scenario**: You want a general-purpose Ubuntu template for development VMs with Ansible support.
 
 ```bash
-sudo ./create_template.sh
+sudo ./proxmox_template_creator.sh
 ```
 
 **Answers**:
