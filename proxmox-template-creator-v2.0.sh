@@ -66,31 +66,43 @@ echo "2) Debian 13 (Trixie)"
 echo "3) Ubuntu 22.04 LTS (Jammy)"
 echo "4) Ubuntu 24.04 LTS (Noble)"
 echo "5) Rocky Linux 9"
-echo "6) AlmaLinux 8"
-echo "7) AlmaLinux 9"
-echo "8) Fedora 41"
+echo "6) Rocky Linux 10"
+echo "7) AlmaLinux 8"
+echo "8) AlmaLinux 9"
+echo "9) Fedora 44"
 echo "----------------------------------------"
 
 while true; do
-    read -rp "Select distribution [1-8]: " DISTRO_CHOICE
+    read -rp "Select distribution [1-9]: " DISTRO_CHOICE
     case "$DISTRO_CHOICE" in
         1) DISTRO="debian"; VERSION="12"; DISTRO_NAME="Debian 12"; PKG_MGR="apt"; CLOUD_USER="debian"
            IMAGE_URL="https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2"; break ;;
+
         2) DISTRO="debian"; VERSION="13"; DISTRO_NAME="Debian 13"; PKG_MGR="apt"; CLOUD_USER="debian"
            IMAGE_URL="https://cloud.debian.org/images/cloud/trixie/latest/debian-13-genericcloud-amd64.qcow2"; break ;;
+
         3) DISTRO="ubuntu"; VERSION="22.04"; DISTRO_NAME="Ubuntu 22.04 LTS"; PKG_MGR="apt"; CLOUD_USER="ubuntu"
            IMAGE_URL="https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-disk-kvm.img"; break ;;
+
         4) DISTRO="ubuntu"; VERSION="24.04"; DISTRO_NAME="Ubuntu 24.04 LTS"; PKG_MGR="apt"; CLOUD_USER="ubuntu"
            IMAGE_URL="https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img"; break ;;
+
         5) DISTRO="rocky"; VERSION="9"; DISTRO_NAME="Rocky Linux 9"; PKG_MGR="dnf"; CLOUD_USER="rocky"
-           IMAGE_URL="https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-Base.latest.x86_64.qcow2"; break ;;
-        6) DISTRO="alma"; VERSION="8"; DISTRO_NAME="AlmaLinux 8"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
+           IMAGE_URL="https://dl.rockylinux.org/pub/rocky/9.8/images/x86_64/Rocky-9-GenericCloud-Base-9.8-20260525.0.x86_64.qcow2"; break ;;
+
+        6) DISTRO="rocky"; VERSION="10"; DISTRO_NAME="Rocky Linux 10"; PKG_MGR="dnf"; CLOUD_USER="rocky"
+           IMAGE_URL="https://dl.rockylinux.org/pub/rocky/10.2/images/x86_64/Rocky-10-GenericCloud-Base-10.2-20260525.0.x86_64.qcow2"; break ;;
+
+        7) DISTRO="alma"; VERSION="8"; DISTRO_NAME="AlmaLinux 8"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
            IMAGE_URL="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-latest.x86_64.qcow2"; break ;;
-        7) DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 9"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
+
+        8) DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 9"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
            IMAGE_URL="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2"; break ;;
-        8) DISTRO="fedora"; VERSION="41"; DISTRO_NAME="Fedora 41"; PKG_MGR="dnf"; CLOUD_USER="fedora"
-           IMAGE_URL="https://download.fedoraproject.org/pub/fedora/linux/releases/41/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-41-1.4.x86_64.qcow2"; break ;;
-        *) log_warn "Invalid selection. Please choose 1-8." ;;
+
+        9) DISTRO="fedora"; VERSION="44"; DISTRO_NAME="Fedora 44"; PKG_MGR="dnf"; CLOUD_USER="fedora"
+           IMAGE_URL="https://download.fedoraproject.org/pub/fedora/linux/releases/44/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-44-1.7.x86_64.qcow2"; break ;;
+
+        *) log_warn "Invalid selection. Please choose 1-9." ;;
     esac
 done
 
