@@ -20,9 +20,9 @@ Automated Proxmox VE template creator with cloud-init support. Simplify VM deplo
 ### Supported Distributions
 - **Debian**: 12 (Bookworm), 13 (Trixie)
 - **Ubuntu**: 22.04 LTS (Jammy), 24.04 LTS (Noble)
-- **Rocky Linux**: 9
+- **Rocky Linux**: 8,9
 - **AlmaLinux**: 8, 9
-- **Fedora**: 41
+- **Fedora**: 44
 
 ### Cloud-Init Configuration
 - **IP Assignment**: DHCP or static IP with CIDR notation
