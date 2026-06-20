@@ -368,9 +368,7 @@ echo "  2) Standard (comprehensive tools for monitoring, security, backup)"
 echo "  3) Custom (specify your own packages)"
 read -rp "Select profile [2]: " PKG_PROFILE
 PKG_PROFILE=${PKG_PROFILE:-2}
-log_info "Enabling QEMU guest agent..."
-qm set "$VM_ID" --agent enabled=1
-log_ok "Guest agent enabled"
+
 
 # Build package list based on distro and profile
 case "$PKG_PROFILE" in
