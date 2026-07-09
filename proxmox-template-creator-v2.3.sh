@@ -99,11 +99,11 @@ while true; do
         6)  DISTRO="rocky"; VERSION="10"; DISTRO_NAME="Rocky Linux 10"; PKG_MGR="dnf"; CLOUD_USER="rocky"
             IMAGE_URL="https://dl.rockylinux.org/pub/rocky/10.2/images/x86_64/Rocky-10-GenericCloud-Base-10.2-20260525.0.x86_64.qcow2"; break ;;
 
-        7)  DISTRO="alma"; VERSION="8"; DISTRO_NAME="AlmaLinux 8"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
-            IMAGE_URL="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-latest.x86_64.qcow2"; break ;;
-
-        8)  DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 9"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
+        7)  DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 9"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
             IMAGE_URL="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2"; break ;;
+
+        8)  DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 10"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
+            IMAGE_URL="https://repo.almalinux.org/almalinux/10/cloud/x86_64/images/AlmaLinux-10-GenericCloud-ext4-latest.x86_64.qcow2"; break ;;
 
         9)  DISTRO="fedora"; VERSION="44"; DISTRO_NAME="Fedora 44"; PKG_MGR="dnf"; CLOUD_USER="fedora"
             IMAGE_URL="https://download.fedoraproject.org/pub/fedora/linux/releases/44/Cloud/x86_64/images/Fedora-Cloud-Base-Generic-44-1.7.x86_64.qcow2"; break ;;
