@@ -102,7 +102,7 @@ while true; do
         7)  DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 9"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
             IMAGE_URL="https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2"; break ;;
 
-        8)  DISTRO="alma"; VERSION="9"; DISTRO_NAME="AlmaLinux 10"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
+        8)  DISTRO="alma"; VERSION="10"; DISTRO_NAME="AlmaLinux 10"; PKG_MGR="dnf"; CLOUD_USER="almalinux"
             IMAGE_URL="https://repo.almalinux.org/almalinux/10/cloud/x86_64/images/AlmaLinux-10-GenericCloud-ext4-latest.x86_64.qcow2"; break ;;
 
         9)  DISTRO="fedora"; VERSION="44"; DISTRO_NAME="Fedora 44"; PKG_MGR="dnf"; CLOUD_USER="fedora"
